@@ -527,20 +527,12 @@ ul {
   resize: none;
 }
 
-.form-checkbox {
-  display: flex;
+.checkbox-label {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  align-items: center;
-}
-
-.form-checkbox input[checkbox] {
-  width: 16px;
-  height: 15px;
-}
-
-.checkbox-label {
-  margin-left: 7px;
 
   font-size: 14px;
   line-height: 1.71;
@@ -552,6 +544,26 @@ ul {
 .checkbox-link {
   color: var(--blue-color);
   font-family: inherit;
+}
+
+.icon-checkbox {
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  fill: var(--main-text-color);
+}
+
+.input-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-checkbox:checked + .icon-checkbox {
+  background-color: yellowgreen;
+  background-image: url("../images/icons.svg#icon-icon-check");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .modal-form-button {
