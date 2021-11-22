@@ -374,6 +374,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  width: 200px;
+  height: 50px;
 
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -382,7 +384,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  padding: 10px 32px;
 }
 
 .main-button:hover {
@@ -428,8 +429,9 @@ ul {
 }
 
 .close-button {
+  display: flex;
+  align-items: center;
   content: "";
-  width: 30px;
   height: 30px;
   position: absolute;
   cursor: pointer;
@@ -443,7 +445,6 @@ ul {
 }
 
 .close {
-  display: flex;
   fill: currentColor;
 }
 
@@ -573,29 +574,6 @@ ul {
 .modal-form-button {
   display: flex;
   justify-content: center;
-}
-
-.modal-form-button .button {
-  cursor: pointer;
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  color: var(--white-color);
-  background-color: var(--blue-color);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-}
-
-.modal-form-button .button:hover {
-  background-color: var(--hover-main-button);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------------------------- */
@@ -899,7 +877,6 @@ ul {
 .footer-form-block {
   margin-left: auto;
   display: block;
-  width: 570px;
 }
 
 .footer-form-header {
@@ -913,7 +890,7 @@ ul {
   color: var(--white-color);
 }
 
-.footer-form-group {
+.footer-form {
   display: flex;
   justify-content: space-between;
 }
@@ -925,7 +902,7 @@ ul {
 
 .footer-form-input {
   height: 50px;
-  width: 100%;
+  width: 358px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
